@@ -36,11 +36,11 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "leo")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://we:we@beast2.bqewpdy.mongodb.net/?retryWrites=true&w=majority&appName=Beast2")
-DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://kill:kill@beast3.0t4q18j.mongodb.net/?retryWrites=true&w=majority&appName=Beast3")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://me:me@leo.ldnpuu3.mongodb.net/?retryWrites=true&w=majority&appName=leo")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://we:we@beast2.mongodb+srv://da:da@cluster0.kayvg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://you:you@cluster0.i8u0q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://no:no@beast4.oheh1uh.mongodb.net/?retryWrites=true&w=majority&appName=Beast4")
 DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://yes:yes@beast5.fmsrcug.mongodb.net/?retryWrites=true&w=majority&appName=Beast5")
                             
