@@ -28,8 +28,8 @@ NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/5de2a87af196bcd866b7f.
 
 # Admins, Channels & Users
 OWNER_ID = environ.get('OWNER_ID', '7040444713')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7040444713').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002157654949').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
@@ -42,7 +42,7 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://me:me@leo.ldnpuu3.mong
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://we:we@beast2.mongodb+srv://da:da@cluster0.kayvg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://you:you@cluster0.i8u0q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://pls:pls@cluster0.x3wih.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://yes:yes@beast5.fmsrcug.mongodb.net/?retryWrites=true&w=majority&appName=Beast5")
+DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://ok:ok@cluster0.6mlvi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
                             
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -53,7 +53,7 @@ REQ_CHANNEL = (int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002208570147'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MOVIES_ZILAA')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', 'False')), False)
 IMDB = is_enabled((environ.get('IMDB', 'False')), False)
