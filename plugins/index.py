@@ -325,9 +325,7 @@ async def index_files_to_db1(lst_msg_id, chat, msg, bot):
             logger.exception(e)
             return await bot.send_message(msg.chat.id, f'<b>🚫 Error:</b> {e}\n\n<b>╭ ▸ ETC: </b>{remaining_time_str} ❙ Remaining:</b> <code>{remaining_index}</code>\n<b>├ ▸ Last Updated: <i>{ttime}</i></b>\n<b>╰ ▸ Time Taken: </b>{elapsed_time_str} <b>\n\n<b>╭ ▸ Fetched:</b> <code>{current}</code>\n<b>├ ▸ Saved:</b> <code>{total_files}</code>\n<b>├ ▸ Duplicate:</b> <code>{duplicate}</code>\n<b>╰ ▸ Non:</b> <code>{no_media}</code>\n')
         else:
-            await bot.send_message(msg.chat.id, f'<b>✅ Successfully Completed!!</b>\n\n<b>╭ ▸ ETC: </b>{remaining_time_str} ❙ Remaining:</b> <code>{remaining_index}</code>\n<b>├ ▸ Last Updated: <i>{ttime}</i></b>\n<b>╰ ▸ Time Taken: </b>{elapsed_time_str} <b>\n\n<b>╭ ▸ Fetched:</b> <code>{current}</code>\n<b>├ ▸ Saved:</b> <code>{total_files}</code>\n<b>├ ▸ Duplicate:</b> <code>{duplicate}</code>\n<b>╰ ▸ Non:</b> <code>{no_media}</code>\n')
-
-
+            await bot.send_message(msg.chat.id, f'<b>✅ Successfully Completed!!</b>\n\n<b>╭ ▸ ETC: </b>{remaining_time_str} ❙ Remaining:</b> <code>{remaining_index}</code>\n<b>├ ▸ Last Updated: <i>{ttime}</i></b>\n<b>╰ ▸ Non:</b> <code>{no_media}</code>\n\n<b>╭ ▸ Fetched:</b> <code>{current}</code>\n<b>├ ▸ Saved:</b> <code>{total_files}</code>\n<b>╰ ▸ Duplicate:</b> <code>{duplicate}</code>\n')
 async def index_files_to_db2(lst_msg_id, chat, msg, bot):
     total_files = 0
     duplicate = 0
