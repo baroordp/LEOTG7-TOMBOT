@@ -107,7 +107,7 @@ NON_IMG = """<b>‼️ FILE NOT FOUND ? ‼️
 
 4⃣<i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @tg_tarzan</b>"""
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
 async def give_filters(client, message):
     k = await global_filters(client, message)    
     if k == False:
