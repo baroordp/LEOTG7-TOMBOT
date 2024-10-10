@@ -27,11 +27,6 @@ from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_
 from database.users_chats_db import db
 from database.ia_filterdb import Media2, Media3, Media4, Media5, get_file_details, get_search_results, get_bad_files, db as clientDB, db2 as clientDB2, db3 as clientDB3, db4 as clientDB4, db5 as clientDB5
 from database.filters_mdb import find_gfilter, get_gfilters
-from database.mfilters_mdb import (
-    del_all,
-    find_filter,
-    get_filters,
-)
 import logging
 
 logger = logging.getLogger(__name__)
